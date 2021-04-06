@@ -1,0 +1,7 @@
+<div class="form-group col-lg-5 mx-auto">
+    <!-- <label for="country" class="text-center">Select Country</label> -->
+    <select class="form-control" name ="country" id="country" #input (change)="update(input.value)">
+        <option value="" disabled selected>Select your country</option>
+        <option value="{{c}}" *ngFor="let c of countrylist">{{c}}</option>
+    </select>
+</div>

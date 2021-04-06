@@ -1,0 +1,30 @@
+<div class="form-group col-lg-5 mx-auto">
+    <!-- <label for="country" class="text-center">Select Country</label> -->
+    <input 
+    class="form-control mt-3 mb-3" 
+    placeholder="Search for a city" 
+    name ="country" id="country" #input (change)="update(input.value)">
+
+</div>
+<hr/>
+<div class="card w-75 text-center mx-auto" *ngIf="flag">
+    <div class="card-body">
+      <h5 class="card-title">{{cityName}}</h5>
+      
+      <p class="card-text">{{ weatherKind}}</p>
+      <p class="card-text">{{ cloundPercentage}}% Clouds</p>
+      <div class="other">
+          <p class="font-weight-bold"><img src="../../../assets/img/t.png"/>Temperature(in celcius) : {{temp}}</p>
+          <p><img src="../../../assets/img/t.png"/>Maximum Temp(in celcius) : {{max_temp}}</p>
+          <p><img src="../../../assets/img/t.png"/>Minimum Temp(in celcius)  : {{min_temp}}</p>
+          <p><img src="../../../assets/img/t.png"/>Feels like (in celcius) : {{feels_like}}</p>
+          <p><img src="../../../assets/img/wind_icon.png"/> Wind speed (in m/sec): {{windSpeed}}</p>
+          <p> <img src="../../../assets/img/wind_icon.png"/>Wind Direction (in angle(deg) : {{windDirection}}</p>
+          <p><img src="../../../assets/img/h.png"/>Humidity (in %): {{humidity}}</p>
+          <p><img src="../../../assets/img/p.png"/> Atmospheric Pressure(in hPA) : {{pressure}}</p>
+          <p><img src="../../../assets/img/v.png"/>Visibility(in meters) : {{visibility}}</p>
+
+      </div>
+    </div>
+  </div>
+  

@@ -1,0 +1,16 @@
+.card-columns{
+    padding : 10px 10px;
+    background-color: rgb(240, 238, 238);
+}
+.card-columns h5 {
+    font-size : 16 px;
+}
+h4 {
+    margin-top: 47px;
+    font-weight: bold;
+}
+@media screen and (min-width:1090px){
+    .card-columns{
+        height: 350px;
+    }
+}

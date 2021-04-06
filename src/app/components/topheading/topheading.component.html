@@ -1,0 +1,14 @@
+<div class="container">
+    <h4>Top | Headines</h4>
+    <div class="row">
+        <div class="col-lg-3 mt-3 mb-3" *ngFor="let d of topHeadingDisplay">
+            <div class="card-columns">
+                <img src="{{d.urlToImage}}" alt="Image not available" width="100%"/>
+                <h5 class="mt-2 mb-2">{{d.title | shorten}}</h5>
+                <a href="{{d.url}}"target="_blank" alt="image" 
+                class="btn btn-dark btn-sm mt-2">Read More</a>
+            </div>
+            
+        </div>
+    </div>
+</div>

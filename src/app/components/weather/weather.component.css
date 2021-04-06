@@ -1,0 +1,16 @@
+.card-title {
+    font-weight: 800;
+    font-size: 25px;
+    color : blue;
+
+}
+.card-text {
+    font-size : 20px;
+}
+.other {
+    font-size: 15px;
+}
+img {
+    margin-right: 1rem;
+}
+
